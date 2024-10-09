@@ -1,0 +1,32 @@
+#Construcors and Destructors
+
+Constructor is called as soon as the object is created.
+
+Parameterized Constructors
+
+These are used when the user wants to give the value to be initialise class member variable when an object is created.
+
+Usage of Parameterized Constructors
+
+#include <iostream>
+using namespace std;
+
+class Demo{
+    public:
+    int i;
+    float f;
+    Demo(int val, float fval){
+        i=val;
+        f=fval;
+    }
+};
+int main()
+{
+    Demo demo(1000,1.0);
+    Demo demo2(2000,2.0);
+    
+    cout << demo.i << " & " << demo.f << endl;
+    cout << demo2.i << " & " << demo2.f << endl;
+
+    return 0;
+}
